@@ -1,0 +1,33 @@
+.comic{
+    border: solid #000000 1px;
+    background-color: #e38494;
+    margin: 0.5em 0;
+}
+
+.column1{
+    float: left;
+    width: 70%;
+    display: block;
+    height:inherit;
+}
+.column2{
+    float: left;
+    border: 1px;
+    width: 30%;
+    height:inherit;
+}
+
+.name{
+    font-family: fantasy;
+    font-size: 1.5em;
+
+}
+
+.author{
+     font-size: 1em;
+ }
+
+.image{
+    max-height: 100px;
+    float: right;
+}

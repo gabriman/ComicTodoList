@@ -1,0 +1,8 @@
+.root{
+    margin: 20px;
+    height: 500px;
+    background-color: #9faef9;
+    border: solid 1px;
+    width: 400px;
+    position: relative;display: inline-block;
+}
