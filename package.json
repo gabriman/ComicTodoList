@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --watch --colors",
     "serve": "webpack-dev-server --content-base build/ --colors --progress",
-    "start": "npm run build && npm run serve"
+    "start": "npm run build && npm run serve",
+    "start2": "npm run build && start npm run serve"
   },
   "author": "Gabriel Rodriguez",
   "license": "MIT",
@@ -24,6 +25,7 @@
   },
   "dependencies": {
     "@types/react": "^16.0.18",
+    "material-ui": "^0.19.4",
     "moment": "^2.19.1",
     "normalize-css": "^2.3.1",
     "react": "^16.0.0",

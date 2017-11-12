@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import uuid from 'uuid'
 
 import ComicsList from '../ComicsList'
+import InputBox from '../InputBox'
 import styles from './main.css'
 
 
@@ -29,12 +30,30 @@ class Main extends Component {
           author : 'Rick Remember'
         }]
     }
+    
+    
+    this.handlerAddComic = this.handlerAddComic.bind(this);
+  }
+  
+  handlerAddComic(comicName){
+    let newComicList = this.state.comicList.slice();
+    newComicList.push(
+      {
+        id: uuid.v4(),
+        name: comicName,
+        image : 'https://image.freepik.com/vector-gratis/fondos-de-comic_23-2147508673.jpg',
+        author : 'Anonymous'
+      }
+    );
+    this.setState({comicList: newComicList})
+    
   }
   
   render() {
     return (
       <div className={styles.root}>
-        <ComicsList comics = {this.state.comicList} />
+        <InputBox onPressAddComic={this.handlerAddComic}/>
+        <ComicsList comics = {this.state.comicList}/>
       </div>
     )
   }

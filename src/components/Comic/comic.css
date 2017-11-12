@@ -6,19 +6,18 @@
 
 .column1{
     float: left;
-    width: 70%;
+    width: 60%;
     display: block;
-    height:inherit;
+    margin: 1%;
 }
 .column2{
-    float: left;
+    float: right;
     border: 1px;
     width: 30%;
-    height:inherit;
 }
 
 .name{
-    font-family: fantasy;
+    font-weight: bold;
     font-size: 1.5em;
 
 }

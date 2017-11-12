@@ -1,7 +1,7 @@
 .root{
     margin: 20px;
-    height: 500px;
-    background-color: #9faef9;
+    min-height: 500px;
+    background-color: #64B5F6;
     border: solid 1px;
     width: 400px;
     position: relative;display: inline-block;

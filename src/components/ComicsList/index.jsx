@@ -11,20 +11,17 @@ class ComicsList extends Component {
   render() {
     return (
       <div className={styles.root}>
-        {this.props.comics.map( comic => {
-          return (
-            <Comic
-              id = {comic.id}
-              name = {comic.name}
-              image = {comic.image}
-              author = {comic.author}
+        {this.props.comics.map(comic => {
+            return (
+              <Comic
+                key={comic.id}
+                name={comic.name}
+                image={comic.image}
+                author={comic.author}
               />
-          )
+            )
           }
-        
-        
-        
-        )}
+        ).reverse()}
       
       </div>
     )

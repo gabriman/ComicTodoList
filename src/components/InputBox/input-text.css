@@ -1,0 +1,16 @@
+.box{
+    border: solid 1px;
+    border-radius: 2px;
+    padding: 2px ;
+    background-color: #CE93D8;
+}
+
+.input {
+    background-color: #fff;
+    width: 100%;
+    margin: 0 10px ;
+}
+
+.button {
+    vertical-align: middle;
+}
